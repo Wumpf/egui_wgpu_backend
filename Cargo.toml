@@ -11,5 +11,5 @@ readme = "README.md"
 
 [dependencies]
 epi = "0.8.0"
-wgpu = {git = "https://github.com/gfx-rs/wgpu-rs.git", rev = "0234f2723a1fbbfaa48a88948c1554f8de6fa888"}
+wgpu = {git = "https://github.com/gfx-rs/wgpu-rs.git", rev = "6864c0be84a7a9994486ac6704d390ffbd271641"}
 bytemuck = "1.5.0"
