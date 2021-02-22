@@ -10,6 +10,6 @@ license = "MIT OR Apache-2.0"
 readme = "README.md"
 
 [dependencies]
-wgpu = {git = "https://github.com/gfx-rs/wgpu-rs.git", rev = "6864c0be84a7a9994486ac6704d390ffbd271641"}
+wgpu = {git = "https://github.com/gfx-rs/wgpu-rs.git", rev = "a86612e4ef732a607c253444336e93c13c0263d7"}
 epi = "0.9.0"
 bytemuck = "1.5.0"
