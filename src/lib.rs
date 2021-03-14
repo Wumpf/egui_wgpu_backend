@@ -179,7 +179,7 @@ impl RenderPass {
                     // 0: vec2 position
                     // 1: vec2 texture coordinates
                     // 2: uint color
-                    attributes: &wgpu::vertex_attr_array![0 => Float2, 1 => Float2, 2 => Uint],
+                    attributes: &wgpu::vertex_attr_array![0 => Float32x2, 1 => Float32x2, 2 => Uint32],
                 }],
             },
             primitive: wgpu::PrimitiveState {
@@ -389,7 +389,7 @@ impl RenderPass {
         let size = wgpu::Extent3d {
             width: egui_texture.width as u32,
             height: egui_texture.height as u32,
-            depth: 1,
+            depth_or_array_layers: 1,
         };
 
         let texture = device.create_texture(&wgpu::TextureDescriptor {
